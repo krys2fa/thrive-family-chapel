@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../assets/images/tfc2.jpg");
+  background-image: url("../../assets/images/tfc2.jpg");
   background-size: cover;
   background-position: center;
   flex: 1; /* Allow the hero section to grow and fill available space */

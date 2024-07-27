@@ -2,8 +2,7 @@
     background: #2c4c4b;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-        
+    align-items: center;     
   }
   
   .header ul {

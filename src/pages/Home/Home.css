@@ -1,0 +1,59 @@
+.hero {
+    background-image: url("../../assets/images/tfc2.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1; /* Allow the hero section to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+    /* animation: zoom 10s infinite; */
+    min-height: calc(
+      100vh - var(--header-height)
+    ); /* Ensure the hero section is at least the full height minus the header height */
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    background-color: #cea31b;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #cea31b;
+  }
+  
+  #directions, #whatsapp {
+    justify-content: space-between;
+    align-items: baseline;
+    /* align-items: center; */
+  }
+  
+  .hero h2 {
+    font-size: 50px;
+  }
+  
