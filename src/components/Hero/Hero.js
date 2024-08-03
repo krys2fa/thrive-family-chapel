@@ -1,7 +1,7 @@
 // src/components/Hero.js
 import React from "react";
 import "./Hero.css";
-import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa"; // Import icons from react-icons
+import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   return (

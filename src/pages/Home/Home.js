@@ -14,7 +14,14 @@ const Home = () => {
       >
         Welcome to Thrive Family Chapel
       </motion.h2>
-      <p>Join us for worship and fellowship every Sunday at 8:30 AM</p>
+
+      <motion.p className="description"
+        initial={{ x: -500 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 30 }}>
+        Join us for worship and fellowship every Sunday at 8:30 AM
+      </motion.p>
+
       <div className="hero-buttons">
         <motion.a
           whileHover={{ scale: 1.2 }}
@@ -27,6 +34,7 @@ const Home = () => {
           <FaMapMarkerAlt className="icon" />
           <span>Directions</span>
         </motion.a>
+        
         <motion.a
           whileHover={{ scale: 1.2 }}
           initial={{ y: 500 }}
