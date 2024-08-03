@@ -1,6 +1,18 @@
+@font-face {
+  font-family: 'Quicksand';
+  /* src: url('FileName.eot'); */
+  src: url('../public/Quicksand-Bold.ttf') format('ttf'),
+     url('../public/Quicksand-Light.ttf') format('ttf'),
+     url('../public/Quicksand-Medium.ttf') format('ttf'),
+     url('../public/Quicksand-Regular.ttf') format('ttf'),
+     url('../public/Quicksand-SemiBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

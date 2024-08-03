@@ -1,0 +1,10 @@
+.service-img {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.service-images {
+  display: flex;
+  justify-content: space-between;
+}

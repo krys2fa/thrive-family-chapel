@@ -1,22 +1,43 @@
 // src/components/Hero.js
 import React from "react";
 import "./Home.css";
-import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa"; // Import icons from react-icons
+import { FaMapMarkerAlt, FaYoutube } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <section className="hero">
-      <h2>Welcome to Thrive Family Chapel</h2>
+      <motion.h2
+        initial={{ x: -500 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 30 }}
+      >
+        Welcome to Thrive Family Chapel
+      </motion.h2>
       <p>Join us for worship and fellowship every Sunday at 8:30 AM</p>
       <div className="hero-buttons">
-        <a href="#directions" className="hero-button">
-          <span>Get Directions</span>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          initial={{ y: 500 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 30 }}
+          href="#directions"
+          className="hero-button"
+        >
           <FaMapMarkerAlt className="icon" />
-        </a>
-        <a href="#whatsapp" className="hero-button">
-          <span>Whatsapp Channel</span>
-          <FaWhatsapp className="icon" />
-        </a>
+          <span>Directions</span>
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          initial={{ y: 500 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 30 }}
+          href="#whatsapp"
+          className="hero-button"
+        >
+          <FaYoutube className="icon" />
+          <span>Youtube</span>
+        </motion.a>
       </div>
     </section>
   );
