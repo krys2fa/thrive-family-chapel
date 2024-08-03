@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/images/tfc.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header">
       <motion.img
@@ -18,7 +24,12 @@ const Header = () => {
       />
 
       <nav>
-        <ul>
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className={menuOpen ? "open" : ""}></span>
+          <span className={menuOpen ? "open" : ""}></span>
+          <span className={menuOpen ? "open" : ""}></span>
+        </div>
+        <ul className={menuOpen ? "open" : ""}>
           <motion.li
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -46,7 +57,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <a href="tel:053 155 6368">
-              <FaPhoneAlt className="icon" /> <span>Call</span>
+              <FaPhoneAlt className="icon" /> <span>Contact</span>
             </a>
           </motion.li>
         </ul>

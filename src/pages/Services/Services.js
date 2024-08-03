@@ -209,7 +209,7 @@ const Services = () => {
               <span> 8:30 PM - 9:15 PM</span>{" "}
             </p>
             <p>
-              <FaVideo />
+            <FaMapMarkerAlt />
               <span>
                 Weija - Kasoa N1 Highway, Mile 11, Broadcasting Taxi Rank, New
                 Weija, Accra.
