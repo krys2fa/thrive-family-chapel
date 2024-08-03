@@ -62,7 +62,7 @@
 }
 
 .hamburger span:nth-child(1).open {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .hamburger span:nth-child(2).open {
@@ -70,7 +70,7 @@
 }
 
 .hamburger span:nth-child(3).open {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-15px) rotate(-45deg);
 }
 
 nav {
@@ -112,7 +112,8 @@ nav ul li a {
   }
 
   nav ul.open {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px;
+    padding-bottom: 10px;
   }
 
   .hamburger {

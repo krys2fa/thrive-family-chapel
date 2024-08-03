@@ -42,3 +42,12 @@
 .time {
   margin: 0 10px;
 }
+
+.socials {
+
+  display: flex;
+}
+
+.socials svg{
+  margin-right: 20px;
+}
